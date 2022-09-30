@@ -41,8 +41,6 @@ const Signup = () => {
           userName: data.get('username'),
           password: data.get('password'),
         }
-        // console.log(user);
-        console.log(check);
 
         if (check && check.status === 201) {
           const usernameLocal = user.userName ? user.userName.toString() : "invalid";

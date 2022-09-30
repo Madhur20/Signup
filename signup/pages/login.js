@@ -40,8 +40,6 @@ const Login = () => {
       userName: data.get('username'),
       password: data.get('password'),
     }
-
-    // console.log(check);
     
     if (check && check.status === 200) {
       const usernameLocal = user.userName ? user.userName.toString() : "invalid";
@@ -57,7 +55,6 @@ const Login = () => {
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        {/* <AppBar /> */}
         <Box
           sx={{
           marginTop: 8,
